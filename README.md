@@ -4,3 +4,5 @@ A small FastApi Docker service for saving arbitrary json to disk. No authenticat
 Uses nonroot user uid 999 - JSON gets saved to `/configs` which can be mounted to a folder on the host using docker. This folder needs to be writable for 999.
 
 Serves on FastApi default port 8000 - might need port explicitly set for reverse proxies.
+
+Build script uses podman and expexts a .env file with the REGISTRY variable set
